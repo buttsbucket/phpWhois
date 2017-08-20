@@ -99,6 +99,7 @@ return array(
     'ax'                     => 'whois.ax',
     'az'                     => '',
     'ba'                     => '',
+    'band'                   => 'whois.rightside.co',
     'bar'                    => 'whois.nic.bar',
     'bargains'               => 'whois.donuts.co',
     'bayern'                 => 'whois-dub.mm-registry.com',
