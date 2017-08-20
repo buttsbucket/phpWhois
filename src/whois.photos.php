@@ -30,11 +30,12 @@ require_once('whois.parser.php');
 if (!defined('__PHOTOS_HANDLER__'))
 	define('__PHOTOS_HANDLER__', 1);
 
-class photos_handler
-	{
+class photos_handler {
 	function parse($data, $query)
 		{
-		$r['regrinfo'] = generic_parser_b($data_str['rawdata']);
+		$r['regrinfo'] = generic_parser_b($data['rawdata']);
+		$r['regyinfo']['referrer'] = 'whois.donuts.co';
+		$r['regyinfo']['registrar'] = 'Donuts';
 		return $r;
 		}
 	}
