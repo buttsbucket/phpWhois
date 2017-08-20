@@ -32,6 +32,13 @@ class asia_handler {
     function parse($data_str, $query) {
         $r = array();
         $r['regrinfo'] = generic_parser_b($data_str['rawdata']);
+        
+        foreach($data_str['rawdata'] as $k=>$v) {
+        if(preg_match("/\bICANN Reserved Name\b/i", $v)) {
+       $r['regrinfo']['registered'] = 'yes';
+		}
+		}
+        
         $r['regyinfo'] = array(
             'referrer' => 'http://www.dotasia.org/',
             'registrar' => 'DotAsia'
