@@ -34,7 +34,7 @@ class band_handler
 	{
 	function parse($data, $query)
 		{
-		$r['regrinfo'] = generic_parser_b($data_str['rawdata']);
+		$r['regrinfo'] = generic_parser_b($data['rawdata']);
 		return $r;
 		}
 	}
