@@ -176,7 +176,7 @@ return array(
     'construction'           => 'whois.donuts.co',
     'consulting'             => 'whois.unitedtld.com',
     'contractors'            => 'whois.donuts.co',
-    'cooking'                => 'whois-dub.mm-registry.com',
+    'cooking'                => 'whois.nic.cooking',
     'cool'                   => 'whois.donuts.co',
     'coop'                   => 'whois.nic.coop',
     'country'                => 'whois-dub.mm-registry.com',
