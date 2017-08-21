@@ -105,7 +105,7 @@ return array(
     'bayern'                 => 'whois-dub.mm-registry.com',
     'bb'                     => 'http://domains.org.bb/regsearch/getdetails.cfm?DND={domain}.bb',
     'be'                     => 'whois.dns.be',
-    'beer'                   => 'whois-dub.mm-registry.com',
+    'beer'                   => 'whois.nic.beer',
     'berlin'                 => 'whois.nic.berlin',
     'best'                   => 'whois.nic.best',
     'bg'                     => 'whois.register.bg',
