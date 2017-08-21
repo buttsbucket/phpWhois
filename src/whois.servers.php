@@ -28,7 +28,6 @@
 
 return array(
 'DATA' => array(
-    'bz'       => 'gtld',
     'com'      => 'gtld',
     'jobs'     => 'gtld',
     'li'       => 'ch',
