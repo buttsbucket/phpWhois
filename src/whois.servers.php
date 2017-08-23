@@ -255,7 +255,7 @@ return array(
     'gives'                  => 'whois.rightside.co',
     'gl'                     => 'whois.nic.gl',
     'glass'                  => 'whois.donuts.co',
-    'global'                 => 'whois.afilias-srs.net',
+    'global'                 => 'whois.nic.global',
     'globo'                  => 'whois.gtlds.nic.br',
     'gop'                    => 'whois-cl01.mm-registry.com',
     'gov'                    => 'whois.dotgov.gov',
