@@ -179,7 +179,7 @@ return array(
     'cooking'                => 'whois.nic.cooking',
     'cool'                   => 'whois.donuts.co',
     'coop'                   => 'whois.nic.coop',
-    'country'                => 'whois-dub.mm-registry.com',
+    'country'                => 'whois.nic.country',
     'credit'                 => 'whois.donuts.co',
     'creditcard'             => 'whois.donuts.co',
     'cruises'                => 'whois.donuts.co',
