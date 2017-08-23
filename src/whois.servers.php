@@ -281,7 +281,7 @@ return array(
     'holiday'                => 'whois.donuts.co',
     'homes'                  => 'whois.afilias-srs.net',
     'horse'                  => 'whois-dub.mm-registry.com',
-    'host'                   => 'whois.centralnic.com',
+    'host'                   => 'whois.nic.host',
     'house'                  => 'whois.donuts.co',
     'hr'                     => 'whois.dns.hr',
     'ht'                     => 'whois.nic.ht',
