@@ -188,6 +188,7 @@ return array(
     'cy'                     => '',
     'cz'                     => 'whois.nic.cz',
     'dance'                  => 'whois.unitedtld.com',
+    'date'					 => 'whois.nic.date',
     'dating'                 => 'whois.donuts.co',
     'de'                     => 'whois.denic.de',
     'deals'                  => 'whois.donuts.co',
