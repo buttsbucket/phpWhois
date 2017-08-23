@@ -276,6 +276,7 @@ return array(
     'hiv'                    => 'whois.afilias-srs.net',
     'hk'                     => 'whois.hkirc.hk',
     'hn'                     => 'whois.nic.hn',
+    'hockey'                => 'whois.donuts.co',
     'holdings'               => 'whois.donuts.co',
     'holiday'                => 'whois.donuts.co',
     'homes'                  => 'whois.afilias-srs.net',
