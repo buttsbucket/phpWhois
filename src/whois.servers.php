@@ -336,6 +336,7 @@ return array(
     'limo'                   => 'whois.donuts.co',
     'link'                   => 'whois.uniregistry.net',
     'loans'                  => 'whois.donuts.co',
+    'lol'                    => 'whois.uniregistry.net',
     'london'                 => 'whois-lon.mm-registry.com',
     'lotto'                  => 'whois.afilias.net',
     'lt'                     => 'whois.domreg.lt',
