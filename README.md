@@ -1,3 +1,7 @@
+Improved
+------------
+I have already added many new extensions and I will merge any pull request for bugfixes and domains extensions update to the original phpWhois as it's inactive since a long time.
+
 Introduction
 ------------
 
