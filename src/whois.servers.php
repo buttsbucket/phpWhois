@@ -428,7 +428,7 @@ return array(
     'pw'                     => 'whois.nic.pw',
     'qa'                     => 'whois.registry.qa',
     'qpon'                   => 'whois.nic.qpon',
-    'quebec'                 => 'whois.quebec.rs.corenic.net',
+    'quebec'                 => 'whois.nic.quebec',
     're'                     => 'whois.nic.re',
     'recipes'                => 'whois.donuts.co',
     'red'                    => 'whois.afilias.net',
