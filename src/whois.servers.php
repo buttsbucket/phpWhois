@@ -403,6 +403,7 @@ return array(
     'paris'                  => 'whois-paris.nic.fr',
     'partners'               => 'whois.donuts.co',
     'parts'                  => 'whois.donuts.co',
+    'party'                  => 'whois.nic.party',
     'pe'                     => 'kero.yachay.pe',
     'pf'                     => 'whois.registry.pf',
     'photo'                  => 'whois.uniregistry.net',
