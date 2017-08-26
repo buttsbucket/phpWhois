@@ -2,6 +2,13 @@ Improved
 ------------
 I have already added many new extensions and I will merge any pull request for bugfixes and domains extensions update to the original phpWhois as it's inactive since a long time.
 
+I will try to update the composer informations for this repo in few weeks.
+
+Sorry for my bad english...i'm a native french speaker.
+
+ORIGINAL README FILE:
+------------
+
 Introduction
 ------------
 
