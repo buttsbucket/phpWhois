@@ -440,6 +440,7 @@ return array(
     'report'                 => 'whois.donuts.co',
     'republican'             => 'whois.rightside.co',
     'rest'                   => 'whois.centralnic.com',
+    'restaurant'             => 'whois.donuts.co',
     'reviews'                => 'whois.unitedtld.com',
     'rich'                   => 'whois.afilias-srs.net',
     'rio'                    => 'whois.gtlds.nic.br',
