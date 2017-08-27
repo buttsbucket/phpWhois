@@ -467,6 +467,7 @@ return array(
     'sg'                     => 'whois.sgnic.sg',
     'sh'                     => 'whois.nic.sh',
     'shiksha'                => 'whois.afilias.net',
+    'show'                   => 'whois.donuts.co',
     'shoes'                  => 'whois.donuts.co',
     'si'                     => 'whois.arnes.si',
     'singles'                => 'whois.donuts.co',
