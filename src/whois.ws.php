@@ -64,7 +64,13 @@ class ws_handler extends WhoisClient {
             }
         } else
             $r['regrinfo']['registered'] = 'no';
-
+        
+foreach($data_str['rawdata'] as $k=>$v) {
+    if(preg_match("/\brestricted from registration or is not a valid name\b/i", $v)) {
+       $r['regrinfo']['registered'] = 'yes';
+		}
+		}
         return $r;
+        
     }
 }
