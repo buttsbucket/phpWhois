@@ -496,6 +496,7 @@ return array(
     'tattoo'                 => 'whois.uniregistry.net',
     'tax'                    => 'whois.donuts.co',
     'tc'                     => 'whois.meridiantld.net',
+    'tech'                   => 'whois.nic.tech',
     'technology'             => 'whois.donuts.co',
     'tel'                    => 'whois.nic.tel',
     'tf'                     => 'whois.nic.tf',
