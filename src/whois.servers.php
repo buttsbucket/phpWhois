@@ -554,6 +554,7 @@ return array(
     'wed'                    => 'whois.nic.wed',
     'wf'                     => 'whois.nic.wf',
     'wien'                   => 'whois.nic.wien',
+    'win'                   => 'whois.nic.win',
     'wiki'                   => 'whois.nic.wiki',
     'works'                  => 'whois.donuts.co',
     'ws'                     => 'whois.website.ws',
