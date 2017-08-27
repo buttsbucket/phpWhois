@@ -441,6 +441,7 @@ return array(
     'republican'             => 'whois.rightside.co',
     'rest'                   => 'whois.centralnic.com',
     'restaurant'             => 'whois.donuts.co',
+    'review'                => 'whois.nic.review',
     'reviews'                => 'whois.unitedtld.com',
     'rich'                   => 'whois.afilias-srs.net',
     'rio'                    => 'whois.gtlds.nic.br',
