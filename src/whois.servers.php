@@ -453,6 +453,7 @@ return array(
     'ruhr'                   => 'whois.nic.ruhr',
     'sa'                     => 'whois.nic.net.sa',
     'saarland'               => 'whois.ksregistry.net',
+    'sarl'                   => 'whois.donuts.co',
     'sb'                     => 'whois.nic.net.sb',
     'sc'                     => 'whois2.afilias-grs.net',
     'scb'                    => 'whois.nic.scb',
