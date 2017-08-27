@@ -447,7 +447,7 @@ return array(
     'rio'                    => 'whois.gtlds.nic.br',
     'ro'                     => 'whois.rotld.ro',
     'rocks'                  => 'whois.unitedtld.com',
-    'rodeo'                  => 'whois-dub.mm-registry.com',
+    'rodeo'                  => 'whois.rodeo.nic',
     'rs'                     => 'whois.rnids.rs',
     'ru'                     => 'whois.tcinet.ru',
     'ruhr'                   => 'whois.nic.ruhr',
