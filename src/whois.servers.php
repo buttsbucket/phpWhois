@@ -459,6 +459,7 @@ return array(
     'scb'                    => 'whois.nic.scb',
     'schmidt'                => 'whois.nic.schmidt',
     'schule'                 => 'whois.donuts.co',
+    'science'               => 'whois.nic.science',
     'scot'                   => 'whois.scot.coreregistry.net',
     'se'                     => 'whois.iis.se',
     'services'               => 'whois.donuts.co',
