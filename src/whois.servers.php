@@ -470,6 +470,7 @@ return array(
     'shoes'                  => 'whois.donuts.co',
     'si'                     => 'whois.arnes.si',
     'singles'                => 'whois.donuts.co',
+    'site'                   => 'whois.nic.site',
     'sk'                     => 'whois.sk-nic.sk',
     'sm'                     => 'whois.nic.sm',
     'sn'                     => 'whois.nic.sn',
