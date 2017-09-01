@@ -476,6 +476,7 @@ return array(
     'sm'                     => 'whois.nic.sm',
     'sn'                     => 'whois.nic.sn',
     'so'                     => 'whois.nic.so',
+    'soccer'                 => 'whois.donuts.co',
     'social'                 => 'whois.unitedtld.com',
     'software'               => 'whois.rightside.co',
     'sohu'                   => 'whois.gtld.knet.cn',
