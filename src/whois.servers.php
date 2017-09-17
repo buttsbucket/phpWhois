@@ -543,7 +543,7 @@ return array(
     'villas'                 => 'whois.donuts.co',
     'vision'                 => 'whois.donuts.co',
     'vlaanderen'             => 'whois.nic.vlaanderen',
-    'vodka'                  => 'whois-dub.mm-registry.com',
+    'vodka'                  => 'whois.nic.vodka',
     'vote'                   => 'whois.afilias.net',
     'voting'                 => 'whois.voting.tld-box.at',
     'voto'                   => 'whois.afilias.net',
