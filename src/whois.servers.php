@@ -272,6 +272,7 @@ return array(
     'gy'                     => 'whois.registry.gy',
     'hamburg'                => 'whois.nic.hamburg',
     'haus'                   => 'whois.unitedtld.com',
+    'healthcare'             => 'whois.donuts.co',
     'hiphop'                 => 'whois.uniregistry.net',
     'hiv'                    => 'whois.afilias-srs.net',
     'hk'                     => 'whois.hkirc.hk',
