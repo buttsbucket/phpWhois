@@ -69,6 +69,7 @@ return array(
 'WHOIS_SPECIAL' => array(
     'ac'                     => 'whois.nic.ac',
     'academy'                => 'whois.donuts.co',
+    'accountant'            => 'whois.nic.accountant',
     'accountants'            => 'whois.donuts.co',
     'active'                 => 'whois.afilias-srs.net',
     'actor'                  => 'whois.unitedtld.com',
