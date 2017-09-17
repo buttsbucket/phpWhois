@@ -383,6 +383,7 @@ return array(
     'navy'                   => 'whois.rightside.co',
     'nc'                     => 'whois.nc',
     //'net'                    => 'whois.verisign-grs.com',
+    'network'                => 'whois.donuts.co',
     'nf'                     => 'whois.nic.nf',
     'ng'                     => 'whois.nic.net.ng',
     'ngo'                    => 'whois.publicinterestregistry.net',
