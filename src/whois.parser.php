@@ -6,16 +6,16 @@
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
  * of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- * 
+ *
  * @link http://phpwhois.pw
  * @copyright Copyright (C)1999,2005 easyDNS Technologies Inc. & Mark Jeftovic
  * @copyright Maintained by David Saez
@@ -129,7 +129,7 @@ function generic_parser_a_blocks($rawdata, $translate, &$disclaimer) {
 }
 
 function generic_parser_b($rawdata, $items = array(), $dateformat = 'mdy', $hasreg = true, $scanall = false) {
-    if (is_array($items) && !count($items))
+    if (is_array($items) && !count($items)) {
         $items = array(
             'Domain Name:' => 'domain.name',
             'Domain ID:' => 'domain.handle',
@@ -317,36 +317,42 @@ function generic_parser_b($rawdata, $items = array(), $dateformat = 'mdy', $hasr
             'Zone Fax Number:' => 'zone.fax',
             'Zone Email:' => 'zone.email'
         );
+    }
 
-    $r = '';
+    $r = [];
     $disok = true;
 
     while (list($key, $val) = each($rawdata)) {
-        if (trim($val) != '') {
-            if (($val[0] == '%' || $val[0] == '#') && $disok) {
-                $r['disclaimer'][] = trim(substr($val, 1));
-                $disok = true;
+        if (trim($val) === '') {
+            continue;
+        }
+
+        if (($val[0] == '%' || $val[0] == '#') && $disok) {
+            $r['disclaimer'][] = trim(substr($val, 1));
+            $disok = true;
+            continue;
+        }
+
+        $disok = false;
+        reset($items);
+
+        while (list($match, $field) = each($items)) {
+            $pos = strpos($val, $match);
+
+            if ($pos === false || $field === '') {
                 continue;
             }
 
-            $disok = false;
-            reset($items);
+            $var = '$r' . getvarname($field);
+            $itm = trim(substr($val, $pos + strlen($match)));
 
-            while (list($match, $field) = each($items)) {
-                $pos = strpos($val, $match);
+            if ($itm != '') {
+                //dump($var . '="' . str_replace('"', '\"', $itm) . '";');
+                eval($var . '="' . str_replace('"', '\"', $itm) . '";');
+            }
 
-                if ($pos !== false) {
-                    if ($field != '') {
-                        $var = '$r' . getvarname($field);
-                        $itm = trim(substr($val, $pos + strlen($match)));
-
-                        if ($itm != '')
-                            eval($var . '="' . str_replace('"', '\"', $itm) . '";');
-                    }
-
-                    if (!$scanall)
-                        break;
-                }
+            if (!$scanall) {
+                break;
             }
         }
     }
