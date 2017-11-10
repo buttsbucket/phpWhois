@@ -92,7 +92,7 @@ return array(
     'at'                     => 'whois.nic.at',
     'attorney'               => 'whois.rightside.co',
     'au'                     => 'whois.audns.net.au',
-    'auction'                => 'whois.donuts.co',
+    'auction'                => 'whois.nic.auction',
     'audio'                  => 'whois.uniregistry.net',
     'autos'                  => 'whois.afilias-srs.net',
     'aw'                     => 'whois.nic.aw',
