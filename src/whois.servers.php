@@ -206,6 +206,7 @@ return array(
     'dk'                     => 'whois.dk-hostmaster.dk',
     'dm'                     => 'whois.nic.dm',
     'domains'                => 'whois.donuts.co',
+    'download'				 => 'whois.nic.download',
     'durban'                 => 'durban-whois.registry.net.za',
     'dz'                     => 'whois.nic.dz',
     'ec'                     => 'whois.nic.ec',
