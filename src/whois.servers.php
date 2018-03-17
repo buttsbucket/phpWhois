@@ -1,75 +1,79 @@
 <?php
-/**
- * Whois servers list
- * 
- * This class supposed to be instantiated for using the phpWhois library
- * 
- * @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License, version 2
- * @license
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- * 
- * @link http://phpwhois.pw
- * @copyright Copyright (C)1999,2005 easyDNS Technologies Inc. & Mark Jeftovic
- * @copyright Maintained by David Saez
- * @copyright Copyright (c) 2014 Dmitry Lukashin
- */
+/*
+Whois.php        PHP classes to conduct whois queries
 
-return array(
-'DATA' => array(
-    'com'      => 'gtld',
-    'jobs'     => 'gtld',
-    'li'       => 'ch',
-    'net'      => 'gtld',
-    'su'       => 'ru',
-    'tv'       => 'gtld',
-    'za.org'   => 'zanet',
-    'za.net'   => 'zanet',
-    // Punicode
-    'xn--p1ai' => 'ru',
-),
+Copyright (C)1999,2005 easyDNS Technologies Inc. & Mark Jeftovic
+
+Maintained by David Saez
+
+For the most recent version of this package visit:
+
+http://www.phpwhois.org
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+/* servers.whois	v18   Markus Welters	2004/06/25 */
+/* servers.whois	v17	ross golder	2003/02/09 */
+/* servers.whois	v16	mark jeftovic	2001/02/28 */
+
+$this->DATA_VERSION = '20';
+
+$this->DATA = array(
+	'com'		=> 'gtld',
+	'jobs'		=> 'gtld',
+	'li'		=> 'ch',
+	'net'		=> 'gtld',
+	'su'		=> 'ru',
+	'tv'		=> 'gtld',
+	'za.org'	=> 'zanet',
+	'za.net'	=> 'zanet',
+	// Punicode
+	'xn--p1ai' => 'ru'
+	);
 
 /* Non UTF-8 servers */
 
-'NON_UTF8' => array(
-    'br.whois-servers.net'  => 1,
-    'ca.whois-servers.net'  => 1,
-    'cl.whois-servers.net'  => 1,
-    'hu.whois-servers.net'  => 1,
-    'is.whois-servers.net'  => 1,
-    'pt.whois-servers.net'  => 1,
-    'whois.interdomain.net' => 1,
-    'whois.lacnic.net'      => 1,
-    'whois.nicline.com'     => 1,
-    'whois.ripe.net'        => 1,
-),
+$this->NON_UTF8 = array(
+	'br.whois-servers.net' => 1,
+	'ca.whois-servers.net' => 1,
+	'cl.whois-servers.net' => 1,
+	'hu.whois-servers.net' => 1,
+	'is.whois-servers.net' => 1,
+	'pt.whois-servers.net' => 1,
+	'whois.interdomain.net' => 1,
+	'whois.lacnic.net' => 1,
+	'whois.nicline.com' => 1,
+	'whois.ripe.net' => 1
+	);
 
 /* If whois Server needs any parameters, enter it here */
 
-'WHOIS_PARAM' => array(
-    'com.whois-servers.net' => 'domain =$',
-    'net.whois-servers.net' => 'domain =$',
-    'de.whois-servers.net'  => '-T dn,ace $',
-    'jp.whois-servers.net'  => 'DOM $/e',
-),
+$this->WHOIS_PARAM = array(
+	'com.whois-servers.net' => 'domain =$',
+	'net.whois-servers.net' => 'domain =$',
+	'de.whois-servers.net'	=> '-T dn,ace $',
+	'jp.whois-servers.net'	=> 'DOM $/e'
+	);
 
 /* TLD's that have special whois servers or that can only be reached via HTTP */
 
-'WHOIS_SPECIAL' => array(
+$this->WHOIS_SPECIAL = array(
     'ac'                     => 'whois.nic.ac',
     'academy'                => 'whois.donuts.co',
-    'accountant'            => 'whois.nic.accountant',
+	  'accountant'            => 'whois.nic.accountant',
     'accountants'            => 'whois.donuts.co',
     'active'                 => 'whois.afilias-srs.net',
     'actor'                  => 'whois.unitedtld.com',
@@ -99,7 +103,7 @@ return array(
     'ax'                     => 'whois.ax',
     'az'                     => '',
     'ba'                     => '',
-    'band'                   => 'whois.rightside.co',
+	  'band'                   => 'whois.rightside.co',
     'bar'                    => 'whois.nic.bar',
     'bargains'               => 'whois.donuts.co',
     'bayern'                 => 'whois-dub.mm-registry.com',
@@ -127,6 +131,7 @@ return array(
     'brussels'               => 'whois.nic.brussels',
     'build'                  => 'whois.nic.build',
     'builders'               => 'whois.donuts.co',
+		'business'               => 'whois.donuts.co',
     'buzz'                   => 'whois.nic.buzz',
     'bw'                     => 'whois.nic.net.bw',
     'by'                     => 'whois.cctld.by',
@@ -134,7 +139,7 @@ return array(
     'bzh'                    => 'whois-bzh.nic.fr',
     'ca'                     => 'whois.cira.ca',
     'cab'                    => 'whois.donuts.co',
-    'cafe'                   => 'whois.donuts.co',
+	  'cafe'                   => 'whois.donuts.co',
     'camera'                 => 'whois.donuts.co',
     'camp'                   => 'whois.donuts.co',
     'cancerresearch'         => 'whois.nic.cancerresearch',
@@ -145,7 +150,7 @@ return array(
     'career'                 => 'whois.nic.career',
     'careers'                => 'whois.donuts.co',
     'cash'                   => 'whois.donuts.co',
-    'casino'                 => 'whois.donuts.co',
+    'casino'                 => 'whois.nic.casino',
     'cat'                    => 'whois.cat',
     'catering'               => 'whois.donuts.co',
     'cc'                     => 'ccwhois.verisign-grs.com',
@@ -161,6 +166,7 @@ return array(
     'cl'                     => 'whois.nic.cl',
     'claims'                 => 'whois.donuts.co',
     'cleaning'               => 'whois.donuts.co',
+    'click'                  => 'whois.uniregistry.net',
     'clinic'                 => 'whois.donuts.co',
     'clothing'               => 'whois.donuts.co',
     'club'                   => 'whois.nic.club',
@@ -170,7 +176,7 @@ return array(
     'coffee'                 => 'whois.donuts.co',
     'college'                => 'whois.centralnic.com',
     'cologne'                => 'whois-fe1.pdt.cologne.tango.knipp.de',
-    //'com'                    => 'whois.verisign-grs.com',
+    'com'                    => 'whois.verisign-grs.com',
     'community'              => 'whois.donuts.co',
     'company'                => 'whois.donuts.co',
     'computer'               => 'whois.donuts.co',
@@ -190,7 +196,7 @@ return array(
     'cy'                     => '',
     'cz'                     => 'whois.nic.cz',
     'dance'                  => 'whois.unitedtld.com',
-    'date'					 => 'whois.nic.date',
+	  'date'									 => 'whois.nic.date',
     'dating'                 => 'whois.donuts.co',
     'de'                     => 'whois.denic.de',
     'deals'                  => 'whois.donuts.co',
@@ -207,7 +213,7 @@ return array(
     'dk'                     => 'whois.dk-hostmaster.dk',
     'dm'                     => 'whois.nic.dm',
     'domains'                => 'whois.donuts.co',
-    'download'				 => 'whois.nic.download',
+    'download'					  => 'whois.nic.download',
     'durban'                 => 'durban-whois.registry.net.za',
     'dz'                     => 'whois.nic.dz',
     'ec'                     => 'whois.nic.ec',
@@ -235,6 +241,7 @@ return array(
     'financial'              => 'whois.donuts.co',
     'fish'                   => 'whois.donuts.co',
     'fishing'                => 'whois-dub.mm-registry.com',
+		'fit'                     => 'whois.nic.fit',
     'fitness'                => 'whois.donuts.co',
     'fj'                     => 'whois.usp.ac.fj',
     'flights'                => 'whois.donuts.co',
@@ -275,12 +282,12 @@ return array(
     'gy'                     => 'whois.registry.gy',
     'hamburg'                => 'whois.nic.hamburg',
     'haus'                   => 'whois.unitedtld.com',
-    'healthcare'             => 'whois.donuts.co',
+	  'healthcare'             => 'whois.donuts.co',
     'hiphop'                 => 'whois.uniregistry.net',
     'hiv'                    => 'whois.afilias-srs.net',
     'hk'                     => 'whois.hkirc.hk',
     'hn'                     => 'whois.nic.hn',
-    'hockey'                => 'whois.donuts.co',
+		'hockey'                => 'whois.donuts.co',
     'holdings'               => 'whois.donuts.co',
     'holiday'                => 'whois.donuts.co',
     'homes'                  => 'whois.afilias-srs.net',
@@ -311,7 +318,7 @@ return array(
     'it'                     => 'whois.nic.it',
     'je'                     => 'whois.je',
     'jetzt'                  => 'whois.nic.jetzt',
-    //'jobs'                   => 'jobswhois.verisign-grs.com',
+    'jobs'                   => 'jobswhois.verisign-grs.com',
     'joburg'                 => 'joburg-whois.registry.net.za',
     'jp'                     => 'whois.jprs.jp',
     'juegos'                 => 'whois.uniregistry.net',
@@ -333,14 +340,14 @@ return array(
     'lawyer'                 => 'whois.rightside.co',
     'lease'                  => 'whois.donuts.co',
     'lgbt'                   => 'whois.afilias.net',
-    //'li'                     => 'whois.nic.li',
+    'li'                     => 'whois.nic.li',
     'life'                   => 'whois.donuts.co',
     'lighting'               => 'whois.donuts.co',
     'limited'                => 'whois.donuts.co',
     'limo'                   => 'whois.donuts.co',
     'link'                   => 'whois.uniregistry.net',
     'loans'                  => 'whois.donuts.co',
-    'lol'                    => 'whois.uniregistry.net',
+   	'lol'                    => 'whois.uniregistry.net',
     'london'                 => 'whois-lon.mm-registry.com',
     'lotto'                  => 'whois.afilias.net',
     'lt'                     => 'whois.domreg.lt',
@@ -386,8 +393,8 @@ return array(
     'name'                   => 'whois.nic.name',
     'navy'                   => 'whois.rightside.co',
     'nc'                     => 'whois.nc',
-    //'net'                    => 'whois.verisign-grs.com',
-    'network'                => 'whois.donuts.co',
+    'net'                    => 'whois.verisign-grs.com',
+	  'network'                => 'whois.donuts.co',
     'nf'                     => 'whois.nic.nf',
     'ng'                     => 'whois.nic.net.ng',
     'ngo'                    => 'whois.publicinterestregistry.net',
@@ -408,7 +415,7 @@ return array(
     'paris'                  => 'whois-paris.nic.fr',
     'partners'               => 'whois.donuts.co',
     'parts'                  => 'whois.donuts.co',
-    'party'                  => 'whois.nic.party',
+	  'party'                  => 'whois.nic.party',
     'pe'                     => 'kero.yachay.pe',
     'pf'                     => 'whois.registry.pf',
     'photo'                  => 'whois.uniregistry.net',
@@ -424,7 +431,7 @@ return array(
     'pm'                     => 'whois.nic.pm',
     'post'                   => 'whois.dotpostregistry.net',
     'pr'                     => 'whois.nic.pr',
-    'press'                  => 'whois.centralnic.com',
+    'press'                  => 'whois.nic.press',
     'pro'                    => 'whois.afilias.net',
     'productions'            => 'whois.donuts.co',
     'properties'             => 'whois.donuts.co',
@@ -434,6 +441,7 @@ return array(
     'qa'                     => 'whois.registry.qa',
     'qpon'                   => 'whois.nic.qpon',
     'quebec'                 => 'whois.nic.quebec',
+	  'racing'                 => 'whois.nic.racing',
     're'                     => 'whois.nic.re',
     'recipes'                => 'whois.donuts.co',
     'red'                    => 'whois.afilias.net',
@@ -445,26 +453,26 @@ return array(
     'report'                 => 'whois.donuts.co',
     'republican'             => 'whois.rightside.co',
     'rest'                   => 'whois.centralnic.com',
-    'restaurant'             => 'whois.donuts.co',
-    'review'                => 'whois.nic.review',
+	  'restaurant'             => 'whois.donuts.co',
+	  'review'                => 'whois.nic.review',
     'reviews'                => 'whois.unitedtld.com',
     'rich'                   => 'whois.afilias-srs.net',
     'rio'                    => 'whois.gtlds.nic.br',
     'ro'                     => 'whois.rotld.ro',
     'rocks'                  => 'whois.unitedtld.com',
-    'rodeo'                  => 'whois.rodeo.nic',
+    'rodeo'                  => 'whois.nic.rodeo',
     'rs'                     => 'whois.rnids.rs',
     'ru'                     => 'whois.tcinet.ru',
     'ruhr'                   => 'whois.nic.ruhr',
     'sa'                     => 'whois.nic.net.sa',
     'saarland'               => 'whois.ksregistry.net',
-    'sarl'                   => 'whois.donuts.co',
+	  'sarl'                   => 'whois.donuts.co',
     'sb'                     => 'whois.nic.net.sb',
     'sc'                     => 'whois2.afilias-grs.net',
     'scb'                    => 'whois.nic.scb',
     'schmidt'                => 'whois.nic.schmidt',
     'schule'                 => 'whois.donuts.co',
-    'science'               => 'whois.nic.science',
+  	'science'               => 'whois.nic.science',
     'scot'                   => 'whois.scot.coreregistry.net',
     'se'                     => 'whois.iis.se',
     'services'               => 'whois.donuts.co',
@@ -472,16 +480,16 @@ return array(
     'sg'                     => 'whois.sgnic.sg',
     'sh'                     => 'whois.nic.sh',
     'shiksha'                => 'whois.afilias.net',
-    'show'                   => 'whois.donuts.co',
+	  'show'                   => 'whois.donuts.co',
     'shoes'                  => 'whois.donuts.co',
     'si'                     => 'whois.arnes.si',
     'singles'                => 'whois.donuts.co',
-    'site'                   => 'whois.nic.site',
+	  'site'                   => 'whois.nic.site',
     'sk'                     => 'whois.sk-nic.sk',
     'sm'                     => 'whois.nic.sm',
     'sn'                     => 'whois.nic.sn',
     'so'                     => 'whois.nic.so',
-    'soccer'                 => 'whois.donuts.co',
+	  'soccer'                 => 'whois.donuts.co',
     'social'                 => 'whois.unitedtld.com',
     'software'               => 'whois.rightside.co',
     'sohu'                   => 'whois.gtld.knet.cn',
@@ -503,7 +511,7 @@ return array(
     'tattoo'                 => 'whois.uniregistry.net',
     'tax'                    => 'whois.donuts.co',
     'tc'                     => 'whois.meridiantld.net',
-    'tech'                   => 'whois.nic.tech',
+	  'tech'                   => 'whois.centralnic.net',
     'technology'             => 'whois.donuts.co',
     'tel'                    => 'whois.nic.tel',
     'tf'                     => 'whois.nic.tf',
@@ -525,7 +533,7 @@ return array(
     'trade'                  => 'whois.nic.trade',
     'training'               => 'whois.donuts.co',
     'travel'                 => 'whois.nic.travel',
-    //'tv'                     => 'tvwhois.verisign-grs.com',
+    'tv'                     => 'tvwhois.verisign-grs.com',
     'tw'                     => 'whois.twnic.net.tw',
     'tz'                     => 'whois.tznic.or.tz',
     'ua'                     => 'whois.ua',
@@ -561,8 +569,8 @@ return array(
     'wed'                    => 'whois.nic.wed',
     'wf'                     => 'whois.nic.wf',
     'wien'                   => 'whois.nic.wien',
-    'win'                   => 'whois.nic.win',
     'wiki'                   => 'whois.nic.wiki',
+	  'win'                   => 'whois.nic.win',
     'works'                  => 'whois.donuts.co',
     'ws'                     => 'whois.website.ws',
     'wtc'                    => 'whois.nic.wtc',
@@ -571,7 +579,6 @@ return array(
     'xyz'                    => 'whois.nic.xyz',
     'yachts'                 => 'whois.afilias-srs.net',
     'yt'                     => 'whois.nic.yt',
-    'zip'                    => 'domain-registry-whois.l.google.com',
     'zm'                     => 'whois.nic.zm',
     'zone'                   => 'whois.donuts.co',
 
@@ -658,20 +665,118 @@ return array(
     'xn--yfro4i67o'          => 'whois.sgnic.sg',
     'xn--ygbi2ammx'          => 'whois.pnina.ps',
     'xn--zfr164b'            => 'whois.conac.cn',
-),
+);
 
 /* handled gTLD whois servers */
 
-'WHOIS_GTLD_HANDLER' => array(
-    'whois.bulkregister.com' => 'enom',
-    'whois.dotregistrar.com' => 'dotster',
-    'whois.namesdirect.com'  => 'dotster',
-    'whois.psi-usa.info'     => 'psiusa',
-    'whois.www.tv'           => 'tvcorp',
-    'whois.tucows.com'       => 'opensrs',
-    'whois.35.com'           => 'onlinenic',
-    'whois.nominalia.com'    => 'genericb',
-    'whois.encirca.com'      => 'genericb',
-    'whois.corenic.net'      => 'genericb'
-),
-);
+$this->WHOIS_GTLD_HANDLER = array(
+		'whois.bulkregister.com'			=> 'enom',
+		'whois.dotregistrar.com'			=> 'dotster',
+		'whois.namesdirect.com'				=> 'dotster',
+		'whois.psi-usa.info'				=> 'psiusa',
+		'whois.www.tv'						=> 'tvcorp',
+		'whois.tucows.com'					=> 'opensrs',
+		'whois.35.com'						=> 'onlinenic',
+		'whois.nominalia.com'				=> 'genericb',
+		'whois.encirca.com'					=> 'genericb',
+		'whois.corenic.net'					=> 'genericb'
+		);
+
+/* Non ICANN TLD's */
+
+$this->WHOIS_NON_ICANN = array (
+		'agent'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'agente'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'america'	=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'amor'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'amore'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'amour'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'arte'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'artes'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'arts'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'asta'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'auktion'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'boutique'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'chat'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'chiesa'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'church'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'cia'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'ciao'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'cie'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'club'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'clube'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'com2'		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'deporte'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'ditta'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'earth'		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'eglise'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'enchere'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'escola'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'escuela'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'esporte'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'etc'		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'famiglia'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'familia'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'familie'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'family'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'free'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'hola'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'game'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'ges'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'gmbh'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'golf'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'gratis'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'gratuit'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'iglesia'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'igreja'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'inc'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'jeu'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'jogo'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'juego'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'kids'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'kirche'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'krunst'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'law'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'legge'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'lei'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'leilao'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'ley'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'liebe'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'lion'		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'llc'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'llp'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'loi'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'loja'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'love'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'ltd'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'makler'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'med'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'mp3'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'not'		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'online'	=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'recht'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'reise'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'resto'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'school'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'schule'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'scifi'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'scuola'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'shop'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'soc'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'spiel'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'sport'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'subasta'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'tec'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'tech'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'tienda'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'travel'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'turismo'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'usa' 		=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}',
+		'verein'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'viaje'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'viagem'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'video'		=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'voyage'	=> 'http://www.new.net/search_whois.tp?domain={domain}&tld={tld}',
+		'z'			=> 'http://www.adns.net/whois.php?txtDOMAIN={domain}.{tld}'
+		);
+?>
