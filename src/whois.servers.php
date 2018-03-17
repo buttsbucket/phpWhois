@@ -429,6 +429,7 @@ $this->WHOIS_SPECIAL = array(
     'place'                  => 'whois.donuts.co',
     'plumbing'               => 'whois.donuts.co',
     'pm'                     => 'whois.nic.pm',
+    'poker'                  => 'whois.afilias.net',
     'post'                   => 'whois.dotpostregistry.net',
     'pr'                     => 'whois.nic.pr',
     'press'                  => 'whois.nic.press',
