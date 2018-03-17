@@ -408,6 +408,7 @@ $this->WHOIS_SPECIAL = array(
     'nz'                     => 'whois.srs.net.nz',
     'okinawa'                => 'whois.gmoregistry.ne',
     'om'                     => 'whois.registry.om',
+    'ong'                    => 'whois.publicinterestregistry.net',
     'onl'                    => 'whois.afilias-srs.net',
     'org'                    => 'whois.pir.org',
     'organic'                => 'whois.afilias.net',
