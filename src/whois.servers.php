@@ -145,6 +145,7 @@ return array(
     'career'                 => 'whois.nic.career',
     'careers'                => 'whois.donuts.co',
     'cash'                   => 'whois.donuts.co',
+    'casino'                 => 'whois.donuts.co',
     'cat'                    => 'whois.cat',
     'catering'               => 'whois.donuts.co',
     'cc'                     => 'ccwhois.verisign-grs.com',
